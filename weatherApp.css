@@ -1,0 +1,130 @@
+*{
+margin: auto;
+font-family: 'Poppins',sans-serif;
+box-sizing: border-box;
+}
+body{
+    background: #032B44;
+
+}
+.card{
+    width: 400px;
+    height: 600px;
+    background: #333333;
+    color:#FFF;
+    margin: 100px auto 0;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    transition: height .6s ease;
+}
+.search{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   background: #333333;
+   justify-content: space-between;
+
+}
+
+.search input{
+    width: 40%;
+    height: 70%;
+    outline: none;
+    border-radius: 30px;
+    flex: 1;
+    font-size: 20px;
+    background: #333333;
+    color: #fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 10px 25px;
+    margin-right: 16;
+    border: 1px solid #fff;
+}
+.search input::placeholder{
+    color: #fff;
+    text-transform: capitalize;
+}
+.search button{
+ border: 0;
+ outline: 0;
+ background: #333333;
+ border-radius: 45%;
+ width: 45px;
+ height: 45px;
+ cursor: pointer;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+
+}
+.search button img{
+   width: 30px;
+   
+
+
+}
+.weather, 
+.details,
+.error{
+    visibility: hidden;
+}
+.weather.active, 
+.details.active,
+.error.active{
+    visibility: visible;
+}
+.weather-icon{
+   width: 170px;
+   margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-top: -5px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 35px;
+
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col2{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-left: 10px;
+}
+.col2 img{
+    width: 40px;
+    margin-left: 10px;
+}
+.humidity, .wind{
+  font-size: 25px;
+  margin-top: -6px;
+}
+
+.error{
+     margin-left:20px ;
+     font-size: 16px;
+     color: #fff;
+     margin-top: 10px ;
+
+}
